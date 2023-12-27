@@ -29,6 +29,9 @@ const populateEvent = (query: any) => {
 
 // CREATE
 export async function createEvent({ userId, event, path }: CreateEventParams) {
+  console.log('EventForm - path: ', path);
+  console.log('EventForm - event: ', event);
+  console.log('EventForm - userId: ', userId);
   try {
     await connectToDatabase()
 
